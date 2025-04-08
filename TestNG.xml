@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Functional Test Suite" parallel="false">
+    <listeners>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+    </listeners>
+
+    <test name="Login Scenarios for SauceDemo site">
+        <classes>
+            <class name="test.scenarios.saucedemo.Scenario1_Login"/>
+        </classes>
+    </test>
+
+    <test name="Scenarios for Todo site">
+        <classes>
+            <class name="test.scenarios.todo.Scenario1_CreateTodo"/>
+        </classes>
+    </test>
+</suite>

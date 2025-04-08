@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-08T17:41:02 CST" name="SauceDemo Functional Test Suite" finished-at="2025-04-08T17:41:56 CST" duration-ms="54958">
+    <groups>
+    </groups>
+    <test started-at="2025-04-08T17:41:02 CST" name="Login Scenarios for SauceDemo site" finished-at="2025-04-08T17:41:45 CST" duration-ms="43030">
+      <class name="test.scenarios.saucedemo.Scenario1_Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:02 CST" name="setUp" finished-at="2025-04-08T17:41:09 CST" duration-ms="7314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:09 CST" name="beforeMethod" finished-at="2025-04-08T17:41:09 CST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.scenarios.saucedemo.Scenario1_Login.testLogin(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:09 CST" name="testLogin" data-provider="loginCredentials" finished-at="2025-04-08T17:41:17 CST" duration-ms="7660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="resetForNextTest()[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:17 CST" name="resetForNextTest" finished-at="2025-04-08T17:41:17 CST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetForNextTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:17 CST" name="getResult" finished-at="2025-04-08T17:41:17 CST" duration-ms="391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=Scenario1_Login.testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:17 CST" name="beforeMethod" finished-at="2025-04-08T17:41:17 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.scenarios.saucedemo.Scenario1_Login.testLogin(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:17 CST" name="testLogin" data-provider="loginCredentials" finished-at="2025-04-08T17:41:31 CST" duration-ms="13453" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected successful login to inventory page for user: standard_user]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected successful login to inventory page for user: standard_user
+at org.testng.Assert.fail(Assert.java:111)
+at test.scenarios.saucedemo.Scenario1_Login.testLogin(Scenario1_Login.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="resetForNextTest()[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:31 CST" name="resetForNextTest" finished-at="2025-04-08T17:41:31 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetForNextTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:31 CST" name="getResult" finished-at="2025-04-08T17:41:31 CST" duration-ms="52" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=FAILURE method=Scenario1_Login.testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:31 CST" name="beforeMethod" finished-at="2025-04-08T17:41:31 CST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.scenarios.saucedemo.Scenario1_Login.testLogin(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:31 CST" name="testLogin" data-provider="loginCredentials" finished-at="2025-04-08T17:41:39 CST" duration-ms="8519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="resetForNextTest()[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:39 CST" name="resetForNextTest" finished-at="2025-04-08T17:41:39 CST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetForNextTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:39 CST" name="getResult" finished-at="2025-04-08T17:41:39 CST" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=Scenario1_Login.testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:39 CST" name="beforeMethod" finished-at="2025-04-08T17:41:39 CST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.scenarios.saucedemo.Scenario1_Login.testLogin(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:39 CST" name="testLogin" data-provider="loginCredentials" finished-at="2025-04-08T17:41:43 CST" duration-ms="3536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="resetForNextTest()[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:43 CST" name="resetForNextTest" finished-at="2025-04-08T17:41:43 CST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetForNextTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:43 CST" name="getResult" finished-at="2025-04-08T17:41:43 CST" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=Scenario1_Login.testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:43 CST" name="beforeMethod" finished-at="2025-04-08T17:41:43 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.scenarios.saucedemo.Scenario1_Login.testLoginNegative(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:43 CST" name="testLoginNegative" data-provider="loginNegativeCredsentials" finished-at="2025-04-08T17:41:43 CST" duration-ms="307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method is-config="true" signature="resetForNextTest()[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:43 CST" name="resetForNextTest" finished-at="2025-04-08T17:41:43 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetForNextTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:43 CST" name="getResult" finished-at="2025-04-08T17:41:43 CST" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginNegative status=SUCCESS method=Scenario1_Login.testLoginNegative(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:43 CST" name="beforeMethod" finished-at="2025-04-08T17:41:43 CST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.scenarios.saucedemo.Scenario1_Login.testLoginNegative(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:43 CST" name="testLoginNegative" data-provider="loginNegativeCredsentials" finished-at="2025-04-08T17:41:44 CST" duration-ms="348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method is-config="true" signature="resetForNextTest()[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:44 CST" name="resetForNextTest" finished-at="2025-04-08T17:41:44 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetForNextTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:44 CST" name="getResult" finished-at="2025-04-08T17:41:44 CST" duration-ms="116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginNegative status=SUCCESS method=Scenario1_Login.testLoginNegative(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:44 CST" name="beforeMethod" finished-at="2025-04-08T17:41:44 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.scenarios.saucedemo.Scenario1_Login.testLoginNegative(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:44 CST" name="testLoginNegative" data-provider="loginNegativeCredsentials" finished-at="2025-04-08T17:41:44 CST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method is-config="true" signature="resetForNextTest()[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:44 CST" name="resetForNextTest" finished-at="2025-04-08T17:41:44 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetForNextTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:44 CST" name="getResult" finished-at="2025-04-08T17:41:44 CST" duration-ms="37" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginNegative status=SUCCESS method=Scenario1_Login.testLoginNegative(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.scenarios.saucedemo.Scenario1_Login@1e800aaa]" started-at="2025-04-08T17:41:44 CST" name="tearDown" finished-at="2025-04-08T17:41:45 CST" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.scenarios.saucedemo.Scenario1_Login -->
+    </test> <!-- Login Scenarios for SauceDemo site -->
+    <test started-at="2025-04-08T17:41:45 CST" name="Add to Basket Scenarios" finished-at="2025-04-08T17:41:56 CST" duration-ms="11925">
+      <class name="test.scenarios.todo.Scenario1_CreateTodo">
+        <test-method is-config="true" signature="StartTest()[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d]" started-at="2025-04-08T17:41:01 CST" name="StartTest" finished-at="2025-04-08T17:41:02 CST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d]" started-at="2025-04-08T17:41:45 CST" name="setUp" finished-at="2025-04-08T17:41:47 CST" duration-ms="2150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d]" started-at="2025-04-08T17:41:47 CST" name="beforeMethod" finished-at="2025-04-08T17:41:47 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.scenarios.todo.Scenario1_CreateTodo.createAndDeleteTodo(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createAndDeleteTodo(java.lang.String)[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d]" started-at="2025-04-08T17:41:47 CST" name="createAndDeleteTodo" data-provider="todoInputs" finished-at="2025-04-08T17:41:52 CST" duration-ms="5482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[This is a test Input 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndDeleteTodo -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d]" started-at="2025-04-08T17:41:52 CST" name="getResult" finished-at="2025-04-08T17:41:52 CST" duration-ms="43" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAndDeleteTodo status=SUCCESS method=Scenario1_CreateTodo.createAndDeleteTodo(java.lang.String)[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d]" started-at="2025-04-08T17:41:52 CST" name="beforeMethod" finished-at="2025-04-08T17:41:52 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.scenarios.todo.Scenario1_CreateTodo.createAndDeleteTodo(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createAndDeleteTodo(java.lang.String)[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d]" started-at="2025-04-08T17:41:52 CST" name="createAndDeleteTodo" data-provider="todoInputs" finished-at="2025-04-08T17:41:56 CST" duration-ms="3894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[This is a test input 2 with a very very very long entry]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndDeleteTodo -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d]" started-at="2025-04-08T17:41:56 CST" name="getResult" finished-at="2025-04-08T17:41:56 CST" duration-ms="22" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAndDeleteTodo status=SUCCESS method=Scenario1_CreateTodo.createAndDeleteTodo(java.lang.String)[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.scenarios.todo.Scenario1_CreateTodo@23348b5d]" started-at="2025-04-08T17:41:56 CST" name="tearDown" finished-at="2025-04-08T17:41:56 CST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.scenarios.todo.Scenario1_CreateTodo -->
+    </test> <!-- Add to Basket Scenarios -->
+  </suite> <!-- SauceDemo Functional Test Suite -->
+</testng-results>
